@@ -1,0 +1,149 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "user": "Lara Del Coro",
+      "email": "laradelcoro01@gmail.com"
+    }
+  ],
+  "celebrities": [
+    {
+      "id": "cate-blanchett",
+      "age": 54,
+      "name": "Cate Blanchett",
+      "nationality": "Australia",
+      "occupation": "Producer",
+      "peliculas": " Indiana Jones , Thor: Ragnarok , Ocean's 8 , Don't Look Up"
+    },
+    {
+      "id": "scarlett-johansson",
+      "age": 38,
+      "name": "Scarlett Johansson",
+      "nationality": "United Stated",
+      "occupation": "Actor",
+      "peliculas": "Black Widow, Lucy, Don Jon, The Avengers"
+    },
+    {
+      "id": "jennifer-lawrence",
+      "age": 33,
+      "name": "Jennifer Lawrence",
+      "nationality": "American",
+      "occupation": "Actor",
+      "peliculas": "No Hard Feelings, Passengers, The Hunger Games, X-men"
+    },
+    {
+      "id": "margot-robbie",
+      "age": 33,
+      "name": "Margon Robbie",
+      "nationality": "Australia",
+      "occupation": "Producer",
+      "peliculas": "Barbie, The Suicide Squad, Focus,The Wolf of Wall Street"
+    },
+    {
+      "id": "emma-stone",
+      "age": 34,
+      "name": "Emma Stone",
+      "nationality": "American",
+      "occupation": "Actor",
+      "peliculas": "Spider-Man, Easy A ,Cruella, The Hellp"
+    },
+    {
+      "id": "maryl-streep",
+      "age": 74,
+      "name": "Maryl Streep",
+      "nationality": "American",
+      "occupation": "Actor",
+      "peliculas": "The Devil Waers Prada, Hope Springs, Mamma Mia, The Iron Lady"
+    },
+    {
+      "id": "renee-zellweger",
+      "age": 54,
+      "name": "Reneé Zellweger",
+      "nationality": "American",
+      "occupation": "Actor",
+      "peliculas": "Judy, Cse 39, Bridget Jones's Baby, Chicago"
+    },
+    {
+      "id": "saoirse-ronan",
+      "age": 29,
+      "name": "Saoirse Ronan",
+      "nationality": "Ireland",
+      "occupation": "Actor",
+      "peliculas": "Little Women, Lady Bird, Mary Queen of Scots, The Host"
+    },
+    {
+      "id": "tom-hanks",
+      "age": 67,
+      "name": "Tom Hanks",
+      "nationality": "United Stated",
+      "occupation": "Actor",
+      "peliculas": "Greyhound, Captain Philips, Elvis, Finch"
+    },
+    {
+      "id": "robert-downey",
+      "age": 58,
+      "name": "Robert Downey Jr.",
+      "nationality": "American",
+      "occupation": "Actor",
+      "peliculas": "Iron Man, The Avengers, Sherlock Holmes, Due Date"
+    },
+    {
+      "id": "keanu-reeves",
+      "age": 59,
+      "name": "Kenau Reeves",
+      "nationality": "Canadian",
+      "occupation": "Producer",
+      "peliculas": "Replicas, John Wick, The Matrix, Siberia"
+    },
+    {
+      "id": "hugh-jackman",
+      "age": 54,
+      "name": "Hugh Jackman",
+      "nationality": "Australia",
+      "occupation": "Actor",
+      "peliculas": "Logan, X-Men, Deception, Bad Education",
+      "alt_img": "https://th.bing.com/th/id/OIP.c3ax3KTXUm9EuQ2CuE-pagDHEs?pid=ImgDet&rs=1"
+    },
+    {
+      "id": "chris-hemsworth",
+      "age": 40,
+      "name": "Chris Hemsworth",
+      "nationality": "Australia",
+      "occupation": "Actor",
+      "peliculas": "Thor,The Avengers, Extraction, Vacation"
+    },
+    {
+      "id": "leonardo-dicaprio",
+      "age": 48,
+      "name": "Leonardo DiCaprio",
+      "nationality": "American",
+      "occupation": "Actor",
+      "peliculas": "Titanic, The Wolf of Wall Street, Shutter Island, Catch me if you can"
+    },
+    {
+      "id": "ryan-reynolds",
+      "age": 46,
+      "name": "Ryan Reynolds",
+      "nationality": "Canadian",
+      "occupation": "Producer",
+      "peliculas": "Deadpool, Green Lantern, Red Notice, The Proposal",
+      "alt_img": "https://lh6.googleusercontent.com/proxy/_ELQZxVFD9aoP9d8Bbv0yslpCG1K3qa1k94FNHnf6fRQdwPqvx0CJ4RPjLweZBZqDe7q7Opm-DIXHqh5-pSqQjiVEwAPO6l-LrWozProEVmMmYYLzV7E0Xmn_qM4HrxL6UCqKdmybg=s0-d"
+    },
+    {
+      "id": "chris-evans",
+      "age": 42,
+      "name": "Chris Evans",
+      "nationality": "American",
+      "occupation": "Actor",
+      "peliculas": "Captain America, The Avengers, Gifted, Ghosted"
+    },
+    {
+      "id": "tyler-heochlin",
+      "age": 36,
+      "name": "Tyler Heochlin",
+      "nationality": "American",
+      "occupation": "Actor",
+      "peliculas": "Super Man, Super Girl, Teen Wolf, Arrow"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+<h1>
+  {{currentCelebrity.id ? 'Editar': 'Agregar'}}
+
+  <small>Celebridad</small>
+</h1>
+
+<mat-divider class="mb-2"></mat-divider>
+
+
+<div class="grid">
+  <div class="col-12 sm:col-6">
+    <mat-card>
+      <mat-card-content>
+
+        <!-- conexion con el form reactivo [formGroup ] -->
+        <form class="grid" [formGroup]="celebrityForm" (ngSubmit)="onSubmit()">
+
+          <mat-form-field appearance="outline" color="warn" class="col-12 sm:col-6">
+            <mat-label>Celebridad</mat-label>
+
+            <input type="text" matInput required formControlName="name">
+
+          </mat-form-field>
+
+          <mat-form-field color="warn" appearance="outline"  class="col-12 sm:col-6">
+            <mat-label>Edad</mat-label>
+
+            <input type="text" matInput required formControlName="age">
+
+          </mat-form-field>
+
+          <mat-form-field appearance="outline"  color="warn" class="col-12 s">
+            <mat-label>Nacionalidad</mat-label>
+
+            <input type="text" matInput required formControlName="nationality">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" color="warn" class="col-12 s">
+            <mat-label>Pelicula</mat-label>
+
+            <input type="text" matInput required formControlName="peliculas">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" color="warn" class="col-12 s">
+            <mat-label>Ocupacion</mat-label>
+            <mat-select required formControlName="occupation">
+              <mat-option *ngFor="let occupation of occupations" [value]="occupation.id">
+              {{occupation.desc}}
+              </mat-option>
+           </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" color="warn" class="col-12 s">
+            <mat-label>ImagenAlternativa</mat-label>
+
+            <input type="text" matInput required formControlName="alt_img">
+          </mat-form-field>
+
+
+        </form>
+
+        <div class="flex justify-content-between">
+          <button
+          *ngIf="currentCelebrity.id"
+          (click)="onDeleteCelebrity()"
+          mat-flat-button color="accent"
+          >
+            Borrar
+          </button>
+          <span></span>
+
+          <button mat-flat-button color="accent" (click)="onSubmit()">
+            Guardar
+          </button>
+
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="col-12 sm:col-6">
+    <mat-card>
+      <img [src]="currentCelebrity | celebrityImage" alt="Imagen de la celebridad" mat-card-image>
+    </mat-card>
+  </div>
+</div>
+

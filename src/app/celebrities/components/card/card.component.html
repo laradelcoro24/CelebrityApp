@@ -1,0 +1,35 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{celebrity.name}}</mat-card-title>
+    <mat-card-subtitle>{{celebrity.occupation}}</mat-card-subtitle>
+  </mat-card-header>
+
+
+<img mat-card-image [src]="celebrity | celebrityImage" [alt]="celebrity.name">
+
+  <mat-card-content class="mt-2">
+    <h4>Edad:{{celebrity.age}}</h4>
+    <p>
+      <strong>Nacionalidad</strong> {{celebrity.nationality}}
+      <br>
+      <mat-chip-listbox>
+        <mat-chip *ngFor="let pelicula of celebrity.peliculas.split(',')| slice:0:3">
+          {{pelicula}}
+        </mat-chip>
+      </mat-chip-listbox>
+    </p>
+  </mat-card-content>
+  <mat-divider></mat-divider>
+  <mat-card-actions>
+    <button mat-button mat-raised-button color="accent" [routerLink]="['/celebrities/edit', celebrity.id]">
+      <mat-icon>edit</mat-icon>
+      Editar
+    </button>
+
+    <span class="spacer"></span>
+    <button mat-button [routerLink]="['/celebrities', celebrity.id]">
+      <mat-icon>more_horiz</mat-icon>
+    </button>
+
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,38 @@
+<!-- loaging -->
+<ng-template #divLoading>
+  <mat-grid-list cols="1">
+    <mat-grid-tile>
+      <mat-spinner color="accent"> </mat-spinner>
+    </mat-grid-tile>
+  </mat-grid-list>
+</ng-template>
+
+<!-- card information-->
+
+
+
+  <div *ngIf="celebrity; else divLoading" class="grid p-2" >
+    <mat-card class="col-12 sm:col-6">
+      <mat-card-header>
+       <mat-card-title>{{celebrity.name}}</mat-card-title>
+        <mat-card-subtitle>{{celebrity.occupation}}</mat-card-subtitle>
+      </mat-card-header>
+
+      <img [src]="celebrity | celebrityImage" [alt]="celebrity.name" mat-card-image>
+    <mat-card-content>
+      <mat-list>
+        <mat-list-item><strong>Nacionalidad:</strong>  {{celebrity.nationality}} </mat-list-item>
+        <mat-list-item><strong>Edad:</strong>  {{celebrity.age}} </mat-list-item>
+        <mat-list-item><strong>Peliculas que interpretó:</strong>  {{celebrity.peliculas}} </mat-list-item>
+      </mat-list>
+
+      <mat-card-actions >
+        <button mat-stroked-button color="accent" (click)="goBack()"> Regresar </button>
+      </mat-card-actions>
+    </mat-card-content>
+
+    </mat-card>
+
+  </div>
+
+
